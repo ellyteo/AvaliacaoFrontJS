@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header id="exemplo">
+        <strong>Exercícios do Professor Renan</strong>
+    </header>
+
+    <input id="numero" type="number" value="Número">
+    <input id="numero2" type="number" value="Outro número">
+
+    <button onclick="somar()">Somar</button>
+
+    <main>
+        <h2>Minha página de exercícios</h2>
+        <button id="questao7">Executar Questão 7</button>
+        <button id="questao15">Executar Exercício 15</button>
+        <button id="questao18">Executar Exercício 18</button>
+        <button id="questao21">Executar Exercício 21</button>
+
+
+    </main>
+
+    <footer id="rodape">
+        todos os direitos reservados - Gabriélly Teodoro - 2026
+    </footer>
+    <script src="./scripts/parte2.js"></script>
+
+    <script>
+        function somar() {
+            const numero = parseFloat(document.getElementById("numero").value);
+            const outroNumero = parseFloat(document.getElementById("numero2").value);
+
+            const soma = numero + outroNumero
+
+            alert("o resultado é " + soma)
+        }
+
+    </script>
+
+
+</body>
+
+</html>
